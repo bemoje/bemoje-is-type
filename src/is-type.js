@@ -25,12 +25,6 @@ export default function isType(constructor, value) {
 		)
 	}
 
-	if (typeof constructor.name === 'undefined') {
-		throw new TypeError(
-			chalk.bold.red('The constructor argument is not a constructor'),
-		)
-	}
-
 	// evaluate
 	return typeOf(value) === constructor.name
 }
