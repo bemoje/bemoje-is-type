@@ -84,6 +84,15 @@ class Custom {}
 isType(Custom, new Custom())
 //=> true
 
+isType(null, null)
+//=> true
+
+isType(undefined, undefined)
+//=> true
+
+isType(void 0, void 0)
+//=> true
+
 ```
 
 
@@ -101,12 +110,12 @@ Check if a value is of the given type.
 
 ##### Parameters
 
--   `constructor` **[function][3]** the constructor that creates instances of the type in question, which should be used to check whether or not the value, 'v' is an instance of that same constructor.
+-   `constructor` **([function][3] \| [undefined][4] | null)** the constructor that creates instances of the type in question, which should be used to check whether or not the value, 'v' is an instance of that same constructor.
 
 -   `value` **any** The value to evaluate
 
 ##### Returns
-**[boolean][4]** 
+**[boolean][5]** 
 
 [1]: #istype
 
@@ -114,4 +123,6 @@ Check if a value is of the given type.
 
 [3]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
 
-[4]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[4]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined
+
+[5]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean

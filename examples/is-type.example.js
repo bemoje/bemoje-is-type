@@ -46,3 +46,12 @@ class Custom {}
 
 isType(Custom, new Custom())
 //=> true
+
+isType(null, null)
+//=> true
+
+isType(undefined, undefined)
+//=> true
+
+isType(void 0, void 0)
+//=> true

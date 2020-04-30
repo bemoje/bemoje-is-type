@@ -17,5 +17,9 @@ describe('isType', () => {
 		expect(isType(Object, {})).toBe(true)
 		class Custom {}
 		expect(isType(Custom, new Custom())).toBe(true)
+		expect(isType(null, null)).toBe(true)
+		expect(isType(undefined, undefined)).toBe(true)
+		expect(isType(void 0, void 0)).toBe(true)
+		expect(() => isType('not a function', 5)).toThrow(TypeError)
 	})
 })

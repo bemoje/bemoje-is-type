@@ -1,6 +1,6 @@
 {
    "name": "@bemoje/is-type",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "description": "Check if a value is of the given type.",
    "main": "dist/is-type.umd.js",
    "module": "dist/is-type.esm.js",
@@ -45,6 +45,7 @@
    },
    "license": "MIT",
    "dependencies": {
+      "@bemoje/is-null": "^1.0.0",
       "@bemoje/is-undefined": "^3.0.3",
       "@bemoje/type-of": "^1.0.0",
       "@types/chalk": "^2.2.0",
